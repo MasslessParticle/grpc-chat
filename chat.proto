@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 package chat;
+option java_package = "patterson.travis.chat.grpc";
 
 service Chat {
   rpc StartChat(stream ChatMessage) returns (stream ChatMessage) {}
